@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="octicons/octicons.css">
+  <title>lapty (Charles Nguyen)</title>
+</head>
+<header>
+  <span class="mega-octicon octicon-mark-github"></span>
+  <span class="octicon octicon-primitive-dot"></span>
+</header>
+<body>
+  <div class="container">
+
+      <div class="sideBar">
+      </div>
+
+      <div id="navBar">
+        <ul>
+          <a href="" id="repoButton"><li><span class="octicon octicon-repo"></span>  Repositories</li></a>
+          <a href="" id="eventButton"><li><span class="octicon octicon-rss"></span>  Public activity</li></a>
+        </ul>
+      </div>
+
+      <div id="repos" class="repoBar">
+
+      </div>
+      <div id="events" class="eventBar" style="display:none;">
+      </div>
+
+  </div>
+
+  <footer></footer>
+
+
+
+      <script type="template/html" id="sideTmpl">
+      <% _.each(masterData, function(element, index, list) { %>
+      <a href="https://avatars0.githubusercontent.com/u/8241367?v=2&s=460"><img src="<%= element.avatar_url %>" class="avatar"></a>
+      <h1 class="name"><%=element.name%></h1>
+        <h2><%=element.login%></h2>
+        <ul class=info>
+          <li><%=element.location%></li>
+          <li><%=element.email%></li>
+          <li>Joined on Jul 22, 2014</li>
+        </ul>
+        <ul class=follow>
+          <li><%=element.followers%></li>
+          <li>0</li>
+          <li><%=element.following%></li>
+        </ul>
+
+        <br>
+        <span>Organizations</span>
+        <ul class="orglist">
+
+        <li><a href="https://github.com/tiy-chs-q4-fee"><img src="https://avatars1.githubusercontent.com/u/8192925?v=2&s=72" class="orgImage"></a></li>
+        </ul>
+
+
+    <% }); %>
+
+</script>
+
+      <script type="template/html" id="repoTmpl">
+      <% _.each(repoList, function(element, index, list) { %>
+      <div class="eachRepo">
+        
+      <h1><span id="listbook" class="mega-octicon octicon-repo"></span><a href="<%=element.html_url%>"><%=element.name%></a>
+      <span class="repoRight"><%=element.language%>
+      <span class="octicon octicon-star"></span>        <%=element.stargazers_count%>       <span class="octicon octicon-git-branch"></span> <%=element.forks_count%></span></h1>
+      <span class="descript"><%=element.description%></span>
+      </div>
+
+    <% }); %>
+
+    </script>
+
+    <script type="template/html" id="eventTmpl">
+    <% _.each(eventsArray, function(element, index, list) { %>
+    <div class="eachEvent">
+      <%=element.actor.login%> created <%=element.payload.ref_type%> <%=element.payload.master_branch%> at <a href="https://github.com/repos/<%=element.name%>"><%=element.repo.name%></a>
+
+    </div>
+    <% }); %>
+
+    </script>
+
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/underscore/underscore.js"></script>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
