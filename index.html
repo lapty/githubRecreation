@@ -7,8 +7,36 @@
   <title>lapty (Charles Nguyen)</title>
 </head>
 <header>
-  <span class="mega-octicon octicon-mark-github"></span>
-  <span class="octicon octicon-primitive-dot"></span>
+    <div class="home">
+    <a href="https://github.com"><span class="mega-octicon octicon-mark-github"></span></a>
+    </div>
+    <div class="notifications">
+    <a href="https://github.com/notifications"><span class="octicon octicon-primitive-dot"></span></a>
+    </div>
+    <div class="search">
+    <input type="text" value="This search bar doesn't work.">
+  </div>
+    <div class="headernavLeft">
+      <nav>
+        <ul>
+          <li><a href="https://github.com/explore">Explore</a></li>
+          <li><a href="https://gist.github.com/">Gist</a></li>
+          <li><a href="https://github.com/blog">Blog</a></li>
+          <li><a href="https://help.github.com/">Help</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="headernavRight">
+      <nav>
+        <ul>
+          <li><a href="https://github.com/explore"><img src="https://avatars0.githubusercontent.com/u/8241367?v=2&s=460" width="20px" height="20px" style="border-radius:2px;">  lapty</a></li>
+          <li><a href="https://gist.github.com/"><span class="octicon octicon-plus"></span></a></li>
+          <li><a href="https://gist.github.com/"><span class="octicon octicon-tools"></span></a></li>
+          <li><a href="https://github.com/blog"><span class="octicon octicon-sign-out"></span></a></li>
+        </ul>
+      </nav>
+    </div>
 </header>
 <body>
   <div class="container">
@@ -23,17 +51,13 @@
         </ul>
       </div>
 
-      <div id="repos" class="repoBar">
+      <div id="repos" class="repoBar"></div>
 
-      </div>
-      <div id="events" class="eventBar" style="display:none;">
-      </div>
+      <div id="events" class="eventBar" style="display:none;"></div>
 
   </div>
 
   <footer></footer>
-
-
 
       <script type="template/html" id="sideTmpl">
       <% _.each(masterData, function(element, index, list) { %>
@@ -41,18 +65,18 @@
       <h1 class="name"><%=element.name%></h1>
         <h2><%=element.login%></h2>
         <ul class=info>
-          <li><%=element.location%></li>
-          <li><%=element.email%></li>
-          <li>Joined on Jul 22, 2014</li>
+          <li><span class="octicon octicon-location"></span>  <%=element.location%></li>
+          <li><span class="octicon octicon-mail"></span>  <a href="mailto:<%=element.email%>"><%=element.email%></a></li>
+          <li><span class="octicon octicon-clock"></span>  Joined on Jul 22, 2014</li>
         </ul>
         <ul class=follow>
-          <li><%=element.followers%></li>
-          <li>0</li>
-          <li><%=element.following%></li>
+          <li><a href="https://github.com/<%=element.login%>/followers"><%=element.followers%><span class="wordsBelow"><p>Followers</p>
+          </a></li>
+          <li><a href="https://github.com/<%=element.login%>/following"><%=element.following%><span class="wordsBelow"><p>Following</p></a></li>
         </ul>
 
         <br>
-        <span>Organizations</span>
+        <span style="font-weight:bolder;">Organizations</span>
         <ul class="orglist">
 
         <li><a href="https://github.com/tiy-chs-q4-fee"><img src="https://avatars1.githubusercontent.com/u/8192925?v=2&s=72" class="orgImage"></a></li>
@@ -66,7 +90,7 @@
       <script type="template/html" id="repoTmpl">
       <% _.each(repoList, function(element, index, list) { %>
       <div class="eachRepo">
-        
+
       <h1><span id="listbook" class="mega-octicon octicon-repo"></span><a href="<%=element.html_url%>"><%=element.name%></a>
       <span class="repoRight"><%=element.language%>
       <span class="octicon octicon-star"></span>        <%=element.stargazers_count%>       <span class="octicon octicon-git-branch"></span> <%=element.forks_count%></span></h1>

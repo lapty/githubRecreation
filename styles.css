@@ -17,14 +17,91 @@ header {
   height: 40px;
   margin: 0px;
   padding: 0px;
-  border-bottom: 1px #E5E5E5 solid; }
+  border-bottom: 1px #E5E5E5 solid;
+  font-family: helvetica;
+  font-size: 0.8em;
+  font-weight: bold; }
 
-header span {
+.home {
   display: inline-block;
   width: 30px;
   height: 40px;
   margin-top: 0px;
-  margin-left: 0px; }
+  margin-left: 159px;
+  margin-right: 12px; }
+
+.home a {
+  color: black; }
+
+.home a:hover {
+  color: #4183C4; }
+
+.notifications {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-right: 10px;
+  border-left: #EEEEEE 1px solid;
+  border-right: #EEEEEE 1px solid; }
+
+.notifications a {
+  color: #C1C1C1; }
+
+.notifications a:hover {
+  color: #4183C4; }
+
+.search {
+  display: inline-block; }
+
+header input {
+  width: 207px;
+  height: 25px;
+  border: 1px #DDDDDD solid;
+  border-radius: 3px;
+  color: #AEA9A9; }
+
+.headernavLeft {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px; }
+
+.headernavLeft a {
+  color: black;
+  text-decoration: none; }
+
+.headernavLeft a:hover {
+  color: #4183C4; }
+
+.headernavLeft ul {
+  padding-left: 2px; }
+
+.headernavLeft ul li {
+  display: inline-block;
+  margin-left: 10px; }
+
+.headernavRight {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  float: right;
+  position: absolute;
+  padding-left: 300px; }
+
+.headernavRight a {
+  color: black;
+  text-decoration: none; }
+
+.headernavRight a:hover {
+  color: #4183C4; }
+
+.headernavRight ul {
+  padding-left: 2px; }
+
+.headernavRight ul li {
+  display: inline-block;
+  margin-left: 10px; }
 
 .name {
   padding-top: 7px;
@@ -35,7 +112,18 @@ header span {
   border-bottom: #EEEEEE 1px solid;
   border-top: #EEEEEE 1px solid;
   padding: 10px;
-  margin: 10px; }
+  margin: 10px;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 0.8em;
+  line-height: 22px; }
+
+.info a {
+  text-decoration: none;
+  color: #4183C4; }
+
+.info span {
+  color: #CCCCCC; }
 
 .sideBar {
   width: 22%;
@@ -83,12 +171,29 @@ header span {
   width: 80%;
   display: inline-block;
   list-style-type: none;
+  font-weight: bolder;
   border-bottom: #EEEEEE 1px solid; }
+
+.follow:hover {
+  color: #4183C4; }
+
+.follow li a {
+  text-decoration: none;
+  color: black; }
+
+.follow li a:hover {
+  color: #4183C4; }
 
 .follow li {
   display: inline-block;
   padding: 10px;
   font-size: 2em; }
+
+.wordsBelow {
+  font-size: 0.3em;
+  margin: 0px;
+  color: #BBBBBB;
+  padding: 0px; }
 
 .repoBar {
   display: block;
