@@ -40,53 +40,46 @@
 </header>
 <body>
   <div class="container">
-
-      <div class="sideBar">
-      </div>
-
+    <div class="sideBar"></div>
       <div id="navBar">
         <ul>
           <a href="" id="repoButton"><li><span class="octicon octicon-repo"></span>  Repositories</li></a>
           <a href="" id="eventButton"><li><span class="octicon octicon-rss"></span>  Public activity</li></a>
         </ul>
       </div>
-
       <div id="repos" class="repoBar"></div>
-
       <div id="events" class="eventBar" style="display:none;"></div>
-
   </div>
 
-<div class="bottomWrap">
-  <div class="footernavLeft">
-    <nav>
-      <ul>
-        <li><span style="color:#CCCCCC;">&copy; 2014 GitHub, Inc.</span>
-        <li><a href="https://github.com/explore">Term</a></li>
-        <li><a href="https://gist.github.com/">Privacy</a></li>
-        <li><a href="https://github.com/blog">Security</a></li>
-        <li><a href="https://help.github.com/">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+  <div class="bottomWrap">
+    <div class="footernavLeft">
+      <nav>
+        <ul>
+          <li><span style="color:#CCCCCC;">&copy; 2014 GitHub, Inc.</span>
+          <li><a href="https://github.com/explore">Term</a></li>
+          <li><a href="https://gist.github.com/">Privacy</a></li>
+          <li><a href="https://github.com/blog">Security</a></li>
+          <li><a href="https://help.github.com/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
   <div class="footerMiddle">
     <a href="https://github.com"><span class="mega-octicon octicon-mark-github"></span></a>
-</div>
-
-  <div class="footernavRight">
-    <nav>
-      <ul>
-        <li><a href="https://github.com/explore">Status</a></li>
-        <li><a href="https://gist.github.com/">API</a></li>
-        <li><a href="https://github.com/blog">Training</a></li>
-        <li><a href="https://help.github.com/">Shop</a></li>
-        <li><a href="https://help.github.com/">Blog</a></li>
-        <li><a href="https://help.github.com/">About</a></li>
-      </ul>
-    </nav>
   </div>
 
+    <div class="footernavRight">
+      <nav>
+        <ul>
+          <li><a href="https://github.com/explore">Status</a></li>
+          <li><a href="https://gist.github.com/">API</a></li>
+          <li><a href="https://github.com/blog">Training</a></li>
+          <li><a href="https://help.github.com/">Shop</a></li>
+          <li><a href="https://help.github.com/">Blog</a></li>
+          <li><a href="https://help.github.com/">About</a></li>
+        </ul>
+      </nav>
+    </div>
 </div>
 
 
@@ -96,7 +89,7 @@
       <h1 class="name"><%=element.name%></h1>
         <h2><%=element.login%></h2>
         <ul class=info>
-          <li><span class="octicon octicon-location"></span>  <%=element.location%></li>
+          <li><span class="octicon octicon-location"></span>        <%=element.location%></li>
           <li><span class="octicon octicon-mail"></span>  <a href="mailto:<%=element.email%>"><%=element.email%></a></li>
           <li><span class="octicon octicon-clock"></span>  Joined on Jul 22, 2014</li>
         </ul>

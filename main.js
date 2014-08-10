@@ -13,13 +13,11 @@ $(document).ready(function() {
 
   });
 
-  
 
   var homePage = {
 
       init: function() {
         homePage.initStyling();
-        homePage.initEvents();
       },
       initStyling: function() {
         homePage.renderSide($(".sideBar"));
@@ -28,9 +26,7 @@ $(document).ready(function() {
 
 
       },
-      initEvents: function() {
 
-      },
       render: function(template, data, $target) {
           var tmpl = _.template(template, data);
 
