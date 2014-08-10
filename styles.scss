@@ -13,6 +13,7 @@ body {
   padding:30px;
   padding-top:20px;
   display:inline-block;
+  height:1360px;
 
 }
 
@@ -127,6 +128,88 @@ header input {
   display:inline-block;
   margin-left:10px;
 }
+
+//FOOTER STUFF FOOTER STUFF FOOTER STUFF
+
+.bottomWrap {
+  display:inline-block;
+  width:100%;
+  position:relative;
+  font-family:helvetica;
+  vertical-align:bottom;
+  font-size:.8em;
+  padding:0px;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+
+.footernavLeft {
+  display:inline-block;
+  margin-left:150px;
+  padding:0px
+}
+
+.footernavLeft a {
+  color:#4183C4;
+  text-decoration:none;
+}
+
+.footernavLeft a:hover {
+  color:black;
+}
+
+.footernavLeft ul {
+  padding-left:2px;
+}
+
+.footernavLeft ul li {
+  display:inline-block;
+  margin-left:10px;
+}
+
+.footernavRight {
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+  float:right;
+  position:absolute;
+  padding-left:50px;
+}
+
+.footernavRight a {
+  color:#4183C4;
+  text-decoration:none;
+}
+
+.footernavRight a:hover {
+  color:black;
+}
+
+.footernavRight ul {
+  padding-left:2px;
+}
+
+.footernavRight ul li {
+  display:inline-block;
+  margin-left:10px;
+}
+
+.footerMiddle {
+  display:inline-block;
+  margin-left:170px;
+  margin-right:60px;
+}
+
+.footerMiddle a {
+  color:lightgrey;
+}
+
+.footerMiddle a:hover {
+  color:grey
+}
+
+
 //SIDE BAR SIDE BAR SIDE BAR
 .name {
   padding-top:7px;
@@ -288,7 +371,7 @@ header input {
 }
 
 .descript {
-  font-size:1em;
+  font-size:.8em;
   margin:0;
   padding:0;
 }
@@ -314,7 +397,7 @@ color:#66666F;
 .eachEvent {
 border-bottom:#EEEEEE 1px solid;
 border-top:#EEEEEE 1px solid;
-padding:10px;
+padding:13px;
 display:inline-block;
 width:100%;
 color:#666666;
